@@ -1,0 +1,221 @@
+
+  .supportContainer {
+    display: flex;
+    width: 1500px;
+    height: 800px;
+    background-color: #1b1b32;
+    color: #f5f6f7;
+    font-family: Tahoma;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    overflowY: scroll;
+  }
+  
+  .container-form {
+    padding: 25px 30px;
+    background: linear-gradient(191deg, #17181A -4.95%, #17181A 103.74%);
+    width: 1000px;
+    border-radius: 30px;
+    border: 1px solid rgba(51, 51, 51, 0.60);
+    position: relative;
+  }
+  
+  
+  .container form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+  
+  }
+
+ 
+
+  /* Name */
+  
+  form .user-details .email,
+  form .user-details .firstName,
+  form .user-details .lastName {
+    margin-bottom: 25px;
+    margin-top: 25px;
+    width: calc(100% / 2 - 20px);
+    position: relative;
+  }
+  
+  form .user-details .firstName::before {
+    color: gray;
+    content: 'first';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 3px;
+    width: 30px;
+  }
+
+  form .user-details .lastName::before  {
+    color: gray;
+    content: 'last';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 3px;
+    width: 30px;
+  }
+
+  .user-details .firstName #firstName,
+  .user-details .lastName #lastName{
+    margin-right: 25px;
+    height: 25px;
+    width: 21.4%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    color: white;
+    transition: all 0.3s ease;
+    background:linear-gradient(191deg, #17181A -4.95%, #17181A 103.74%)
+  }
+
+  /* email */
+  .user-details .email #email{
+    height: 25px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    color: white;
+    transition: all 0.3s ease;
+    background:linear-gradient(191deg, #17181A -4.95%, #17181A 103.74%)
+  }
+
+  .details{
+    display: block;
+  }
+  .email {
+    display: block;
+  }
+
+  .user-details .firstName #firstName:focus,
+  .user-details .lastName #lastName:focus,
+  .user-details .email #email:focus{
+    border-color: orange;
+}
+
+  
+// topic //
+
+.topic {
+  display: block;
+  width: 50%;
+  height: 100px;
+  border: 4px dotted #333;
+  padding: 0px 0 20px 20px;
+  }
+
+  .general, .bug{
+    display: block;
+    align-items: center;
+    margin: 0 auto;
+    outline: none;
+  }
+
+  #general, #bug {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 2px solid #555;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+  }
+
+  #general:checked, #bug:checked {
+    background-color: orange;
+    color: #fff;
+  }
+
+  
+
+  textarea {
+    color: white;
+    margin: 10px 0px 0 0;
+    height: 280px;
+    width : 300px;
+    background:linear-gradient(191deg, #17181A -4.95%, #17181A 103.74%);
+    transition: border-color 0.3s;
+    outline: none;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 16px;
+    font-family: Tahoma;
+  }
+
+  textarea:focus {
+    border-color: orange;
+  }
+  
+  form .user-details .description {
+    margin-left: 600px;
+    margin-top: -265px;
+    /* margin-bottom: 100px; */
+  }
+
+  .user-details .description .details-description {
+    display: block;
+  }
+
+  .unsend {
+    margin-left: 800px;
+    margin-top: 20px;
+    color: white;
+    font-size: 24px;
+    width: 110px;
+    height: 50px;
+    background-color: gray;
+    border: none;
+    border-radius: 20px;
+  }
+
+  .send {
+    margin-left: 800px;
+    margin-top: 20px;
+    color: white;
+    font-size: 24px;
+    width: 110px;
+    height: 50px;
+    background-color: orange;
+    border: none;
+    border-radius: 20px;
+  }
+
+  .container-form2 {
+    padding: 25px 30px;
+    background: linear-gradient(191deg, #17181A -4.95%, #17181A 103.74%);
+    width: 870px;
+    border-radius: 30px;
+    border: 1px solid rgba(51, 51, 51, 0.60);
+  }
+
+  .message {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: orange;
+  }
+
+  .ticketNumber {
+    font-size: 20px;
+    color: gray;
+  }
+
+  .number {
+    display: inline;
+    color: white;
+  }
