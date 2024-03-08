@@ -8,6 +8,7 @@ function App() {
   
   return (
       <Routes>
+        {/* ini adalah komponen calculator */}
         <Route path='/' element={<Calculator />}/>
         <Route path='/supportpage' element={<SupportPage />}/>
       </Routes>
